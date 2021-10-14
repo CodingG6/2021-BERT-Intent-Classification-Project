@@ -7,10 +7,12 @@
    - 쿠폰 및 리뷰 이벤트로 인한 이벤트성 리뷰와 의미 없는 댓글로 매장에 대한 정확한 평가가 어려움
  - KorBERT 모델을 이용하여 **순수하게 한국어 리뷰 글 데이터의 분석 값을 이용한 평점 재계산 시스템**을 구현하였습니다.
  
-## 2. 한국전자통신연구원(ETRI)에서 개발한 koBERT 사전훈련 모델
- - [한국전자통신연구원](https://aiopen.etri.re.kr/service_dataset.php)에서 제공하는 학습 모델 이용
-   - 사용 방법
-     - 협약서 작성 및 Open API Key를 발급 받아 tensorflow 버전 모델 다운로드
+## 2. ETRI koBERT 사전훈련 모델
+ - 한국전자통신연구원(ETRI)에서 개발한 한국어 BERT 모델인 koBERT 사전훈련 모델 이용
+ - 사용 방법
+   - [한국전자통신연구원](https://aiopen.etri.re.kr/service_dataset.php)의 데이터 제공 사이트 접속
+   - 협약서 작성 및 Open API Key를 발급
+   - tensorflow 버전 모델 다운로드
 
 ## 3. 데이터 수집 및 전처리
  - pre processing
