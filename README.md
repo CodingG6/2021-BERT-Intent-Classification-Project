@@ -1,13 +1,16 @@
-# koBERT-yogiyo-reviews-classfication
+# korBERT모델을 이용한 자연어 처리(의도 분류) 모델 구현 프로젝트
+(koBERT-yogiyo-reviews-classfication)
 
 ## 1. 프로젝트 기획
- - 현 별점 시스템의 문제점 의식
-    - 리뷰 내용-별점 불일치가 많아 별점만으로는 식당에 대한 긍정/부정 판단이 어려움
-    - 쿠폰 및 리뷰 이벤트로 인한 이벤트성 리뷰와 의미 없는 댓글로 매장에 대한 정확한 평가가 어려움
- - 리뷰 데이터에 대한 평점을 KorBERT 모델을 이용하여 계산하는 시스템
+ - 현 별점 시스템의 문제점에 착안하여, 자연어 처리를 통해 문제를 해결할 수 있는 방법을 모색하다가 의도 분류라는 주제를 선택하였습니다.
+   - 리뷰 내용-별점 불일치가 많아 별점만으로는 식당에 대한 긍정/부정 판단이 어려움
+   - 쿠폰 및 리뷰 이벤트로 인한 이벤트성 리뷰와 의미 없는 댓글로 매장에 대한 정확한 평가가 어려움
+ - KorBERT 모델을 이용하여 **순수하게 한국어 리뷰 글 데이터의 분석 값을 이용한 평점 재계산 시스템**을 구현하였습니다.
  
-## 2. ETRI koBERT(pre trained)
- - https://aiopen.etri.re.kr/service_dataset.php 에서 협약서 작성 및 tensorflow 버전 다운로드
+## 2. 한국전자통신연구원(ETRI)에서 개발한 koBERT 사전훈련 모델
+ - [한국전자통신연구원](https://aiopen.etri.re.kr/service_dataset.php)에서 제공하는 학습 모델 이용
+   - 사용 방법
+     - 협약서 작성 및 Open API Key를 발급 받아 tensorflow 버전 모델 다운로드
 
 ## 3. 데이터 수집 및 전처리
  - pre processing
